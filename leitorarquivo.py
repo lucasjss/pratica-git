@@ -1,6 +1,6 @@
 class LeitorArquivo:
     def __init__(self, nomeArquivo):
-        self.arq = open(nomeArquivo, 'r')
+        self.arq = open(nomeArquivo, "r")
         self.__leValores()
 
     def __leValores(self):
@@ -11,3 +11,9 @@ class LeitorArquivo:
 
     def getValores(self):
         return self.valores
+
+    def getMedias(self):
+        medias = []
+        for serie in self.valores:
+            medias.append(sum(serie) / len(serie))
+        return medias

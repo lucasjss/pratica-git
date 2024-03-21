@@ -1,0 +1,1 @@
+python.exe d:/workspace/pratica-git/geragrafico.py 
